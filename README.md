@@ -72,7 +72,7 @@ The simulation follows the life cycle of entities within the ecosystem:
 *Visualizing the game interface: graphs and main game window.*
 
 ### Comprehensive Class Diagram
-![Class Diagram](docs/classDiagram.png)  
+![Class Diagram](src/data/classDiagram.png)  
 *Visualizing key classes and their relationships.*
 
 ## Future Enhancements
