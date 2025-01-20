@@ -1,6 +1,6 @@
 # EcoSim - Ecosystem Simulation
 
-This is my version of a virtual ecosystem simulation built in Java that models the dynamics of a natural environment where entities interact, evolve and adapt to seasonal changes and resource limitations. This project demonstrates the application of complex system modeling, agent-based simulation, and adaptive behavior, all structured with clean code principles, scalable design patterns, and Object-Oriented Programming (OOP).
+This is my version of a virtual ecosystem simulation built in Java that models the dynamics of a natural environment where entities interact, evolve and adapt to seasonal changes and resource limitations. This project demonstrates the application of complex system modeling, agent-based simulation and adaptive behavior, all structured with clean code principles, scalable design patterns and Object-Oriented Programming (OOP).
 
 ## Project Highlights
 
