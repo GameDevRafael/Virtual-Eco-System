@@ -1,6 +1,6 @@
 # EcoSim - Ecosystem Simulation
 
-This is my version of a virtual ecosystem simulation built in Java that models the dynamics of a natural environment where entities interact, evolve, and adapt to seasonal changes and resource limitations. This project demonstrates the application of complex system modeling, agent-based simulation, and adaptive behavior, all structured with clean code principles, scalable design patterns, and Object-Oriented Programming (OOP).
+This is my version of a virtual ecosystem simulation built in Java that models the dynamics of a natural environment where entities interact, evolve and adapt to seasonal changes and resource limitations. This project demonstrates the application of complex system modeling, agent-based simulation, and adaptive behavior, all structured with clean code principles, scalable design patterns, and Object-Oriented Programming (OOP).
 
 ## Project Highlights
 
@@ -43,7 +43,7 @@ The simulation follows the life cycle of entities within the ecosystem:
 * **Movement and Behavior:** Entities exhibit realistic behaviors like seeking food, fleeing predators and wandering.
 * **Genetic Evolution:** Entities evolve through generational mutations.
 * **Seasonal Changes:** Seasonal (summer/winter) resource fluctuations affect entity survival, visualized through graphs.
-* **Interactivity:** Users can control specific blobs so they can influence the ecosystem's evolution directly.
+* **Interactivity:** Users can pause/reset the game, add entities and control specific blobs so they can influence the ecosystem's evolution directly.
 
 ## Technical Skills Demonstrated
 
@@ -67,7 +67,13 @@ The simulation follows the life cycle of entities within the ecosystem:
 
 ## Visual Interface
 
-The project features an interactive, dynamic visual interface created entirely with PApplet, allowing seamless simulation monitoring and gameplay.
+### PApplet Based Interface
+![Game Interface](src/data/gameWindows.png)  
+*Visualizing the game interface: graphs and main game window.*
+
+### Comprehensive Class Diagram
+![Class Diagram](docs/classDiagram.png)  
+*Visualizing key classes and their relationships.*
 
 ## Future Enhancements
 
