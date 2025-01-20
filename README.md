@@ -1,14 +1,19 @@
 # EcoSim - Ecosystem Simulation
 
-EcoSim is a virtual ecosystem simulation built in Java that models the dynamics of a natural environment, where entities interact, evolve, and adapt to seasonal changes and resource limitations. This project demonstrates the application of complex system modeling, agent-based simulation, and adaptive behavior, all structured with clean code principles and scalable design patterns.
+This is my version of a virtual ecosystem simulation built in Java that models the dynamics of a natural environment where entities interact, evolve, and adapt to seasonal changes and resource limitations. This project demonstrates the application of complex system modeling, agent-based simulation, and adaptive behavior, all structured with clean code principles, scalable design patterns, and Object-Oriented Programming (OOP).
 
 ## Project Highlights
 
-* Complex Ecosystem Simulation: Entities compete for resources, evolve through genetic mutations, and face natural challenges such as predation and seasonal changes.
-* Real-time Monitoring: Graphical representations of population trends, interactions, and evolutionary progress, providing valuable insights into ecosystem dynamics.
-* Genetic Evolution: Entities evolve over generations with mutations that affect their characteristics, including speed, energy, and vision range.
-* Interactive Environment: Users can take control of an entity and influence the outcome of the ecosystem by directly interacting with it.
-* Robust Architecture: Designed with modularity and scalability in mind, featuring a well-structured codebase that separates concerns efficiently.
+* **Complex Ecosystem Simulation:** Entities compete for resources, evolve through genetic mutations and face natural challenges such as predation, seasonal changes, and resource scarcity.
+* **Real-time Monitoring:** Graphical representations of population trends and evolutionary progress.
+* **Genetic Evolution:** Entities evolve over generations with genetic mutations that affect characteristics such as speed, energy, and vision range.
+* **Interactive Environment:** Users can control an entity and influence the ecosystem outcome by directly interacting with it.
+* **Robust Architecture:** Modular and scalable codebase with a clear separation of concerns.
+* **Advanced Visuals:**
+  * **Fractals:** Used for generating trees in the ecosystem.
+  * **Particle Systems:** Simulate dynamic elements such as snow in winter, blood when a blob dies, and movement particles when the user controls a blob.
+  * **Physics-based Movements:** Implemented using vectors and Newton's second law of motion, F=m⋅a.
+  * **PApplet Integration:** Entire visual interface created using the PApplet library.
 
 ## Core Architecture
 
@@ -16,73 +21,64 @@ The project is divided into two main packages that organize the system logically
 
 ### Core
 
-* GameManager: Coordinates the ecosystem simulation, manages the game state, and handles resource and population initialization.
-* Game: Controls the temporal evolution of the system, driving entity behaviors and interactions over time.
-* InteractionManager: Manages all entity interactions, including predation, reproduction, and environmental responses.
-* GraphManager: Visualizes statistical data, such as population changes and evolutionary trends, allowing real-time analysis of the ecosystem.
+* **GameManager:** Coordinates the ecosystem simulation, manages game state and handles resource and population initialization.
+* **Game:** Drives the temporal evolution of the system, managing entity behaviors and interactions over time.
+* **InteractionManager:** Handles entity interactions such as predation, reproduction and responses to environmental changes.
+* **GraphManager:** Visualizes statistical data in real time of population dynamics and evolutionary trends.
 
 ### Model
 
-* World: Defines the structure of the ecosystem, organizing locations and resource availability through the WorldMap class.
-* Factory: Uses the Factory design pattern to create entities like blobs, trees, and fruits, promoting clean code practices and easy system expansion.
-* Entity: Houses all entities within the ecosystem, including:
-    * Animals: Blobs (both passive and predator types), each with distinct survival behaviors.
-    * Plants: Trees and other fixed environmental elements that affect the ecosystem.
-    * Resources: Fruits and other consumables that contribute to entity survival.
+* **World:** Defines the ecosystem's structure using a grid system. Each grid cell organizes entity spawns.
+* **Factory:** Implements the Factory design pattern to create entities like blobs, trees, and fruits efficiently.
+* **Entity:** Encapsulates all ecosystem entities, including:
+  * **Animals:**
+    * **Blobs:** Passive and predator types, each with distinct survival strategies and behaviors.
+  * **Plants:** Trees and other stationary elements that influence the ecosystem.
+  * **Resources:** Fruits that sustain passive blobs and affect ecosystem dynamics.
 
 ## Gameplay Overview
 
-The simulation follows the life cycle of entities within the ecosystem, including:
+The simulation follows the life cycle of entities within the ecosystem:
 
-* Movement and Behavior: Entities exhibit behaviors like seeking food, running from predators, and wandering.
-* Genetic Evolution: Entities evolve over generations through mutations, affecting their survival and adaptation.
-* Seasonal Changes: Graphs demonstrate the influence of seasons on entity survival and resource availability.
-* Interactivity: Users can control a specific entity, guiding it through the challenges posed by the ecosystem.
-
-## Key Features
-
-* Adaptive Evolution: Entities evolve based on genetic mutations that affect traits like speed, energy, and vision.
-* Real-Time Graphs: View population trends, seasonal changes, and genetic data via interactive graphs.
-* Ecosystem Balance: Adjust initial fruit numbers and mutation rates to stabilize the ecosystem and prevent overpopulation or extinction.
+* **Movement and Behavior:** Entities exhibit realistic behaviors like seeking food, fleeing predators and wandering.
+* **Genetic Evolution:** Entities evolve through generational mutations.
+* **Seasonal Changes:** Seasonal (summer/winter) resource fluctuations affect entity survival, visualized through graphs.
+* **Interactivity:** Users can control specific blobs so they can influence the ecosystem's evolution directly.
 
 ## Technical Skills Demonstrated
 
-### Data Structures
-
-* HashMap: Efficiently manages the locations of entities within the ecosystem.
-* ArrayList: Used to track entities, resources, and interactions dynamically.
-
 ### Design Patterns
 
-* Factory: Simplifies the creation of entities (e.g., blobs, trees, fruits) to maintain scalability and flexibility.
-* Singleton: Ensures single instances of game management and ecosystem control components.
+* **Factory:** Streamlines entity creation (e.g., blobs, trees, fruits), ensuring scalability and flexibility for future enhancements.
 
 ### OOP Principles
 
-* Encapsulation, Inheritance, and Polymorphism: Applied throughout the codebase to manage entity behaviors and interactions.
-* Modularity: Ensures a clean, maintainable structure with clear separation of responsibilities.
+* **Encapsulation, Inheritance, and Polymorphism:** Manage entity behaviors and interactions cohesively.
+* **Modularity:** Ensures a clean, maintainable structure with a clear separation of responsibilities.
 
-## Visuals
+### Physics and Visual Enhancements
 
-### Class Dependency Overview
+* **Physics-based Movement:** Implemented using vectors and laws of motion, creating realistic entity behaviors.
+* **Fractals:** Generate trees for the ecosystem.
+* **Particle Systems:**
+  * Snowfall during winter seasons.
+  * Blood particles upon entity deaths.
+  * Movement trails for user-controlled blobs.
 
-Visualize the relationships between major classes in the project to understand the system architecture.
+## Visual Interface
 
-### Comprehensive Class Diagram
-
-An in-depth class diagram depicting the structure and hierarchy of the project's classes.
-
-### Sequence Diagram - Game Interaction
-
-Illustrates the interactions between core classes during gameplay, including the evolution and interaction of entities.
+The project features an interactive, dynamic visual interface created entirely with PApplet, allowing seamless simulation monitoring and gameplay.
 
 ## Future Enhancements
 
-* Expanded Biomes: Introduce diverse ecosystems with varying resources and challenges.
-* Advanced Genetic Algorithms: Implement more complex genetic mutation models for more realistic evolution.
-* Improved Interaction Models: Introduce additional behaviors and interactions for entities, including complex predation and symbiosis.
+* **Expanded Biomes:** Introduce diverse ecosystems with unique resources and challenges.
+* **Advanced Genetic Algorithms:** Develop more complex mutation models for more realistic evolutionary dynamics.
+* **Improved Interactions:** Expand behaviors and interactions, including cooperation and complex predation.
 
 ## How to Run
 
 1. Clone the repository.
-2. Compile and execute using `java -jar ecosim-game.jar`.
+2. Compile and execute the program using:
+
+```bash
+java -jar ecosim-game.jar
