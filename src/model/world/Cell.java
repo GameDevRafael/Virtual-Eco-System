@@ -1,6 +1,9 @@
 package model.world;
 
+import processing.core.PApplet;
 import processing.core.PVector;
+
+import java.util.List;
 
 public class Cell {
     public final PVector position;
@@ -12,6 +15,5 @@ public class Cell {
     public PVector getPosition(){
         return position.copy();
     }
-
 
 }

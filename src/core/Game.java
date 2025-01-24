@@ -447,13 +447,14 @@ public class Game {
      * Reiniciamos o tempo do jogo incluindo a estação do ano e a hora do dia. É chamado quando o jogador decide
      * reiniciar o jogo.
      */
-    public void resetTime() {
+    public void resetTime(LSystem lSys) {
         t0 = System.currentTimeMillis();
         t1 = System.currentTimeMillis();
         dayCycleCounter = 0;
         season = "summer";
         isDay = true;
         firstLaunch = true;
+        lSys.reset();
         secondFamilyTree = false;
     }
 }

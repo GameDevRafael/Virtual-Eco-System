@@ -14,7 +14,7 @@ public class LSystem {
     private String sequence;
     private final Rule[] ruleset;
     private int currentGeneration;
-    private final String[] generationHistory;
+    private String[] generationHistory;
     private static final int MAX_GENERATIONS = 3;
 
     public LSystem(String axiom, Rule[] ruleset) {
@@ -24,6 +24,11 @@ public class LSystem {
         this.generationHistory = new String[MAX_GENERATIONS + 1];
 
         Arrays.fill(generationHistory, axiom); // preenche o array com o axiom
+    }
+
+    public void reset() {
+        currentGeneration = 0;
+        generationHistory = new String[MAX_GENERATIONS + 1];
     }
 
     /**

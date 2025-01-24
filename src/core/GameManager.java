@@ -191,6 +191,8 @@ public class GameManager implements IProcessingApp {
         BlobVillager blobVillager;
         BlobPredator blobPredator;
 
+        fruits.add(entityFactory.addFruit(worldMap, p, mousePosition));
+
         if (p.mouseButton == PApplet.LEFT) {
             if(blobVillagers.isEmpty()){
                 blobVillager = entityFactory.addBlobVillager(worldMap, p, null, mousePosition);
@@ -242,8 +244,9 @@ public class GameManager implements IProcessingApp {
             blobPredators.clear();
             fruits.clear();
             leafTrees.clear();
+            lSys.reset();
             initializeEntities(p);
-            game.resetTime();
+            game.resetTime(lSys);
 
             for(BlobPredator blobPredator : blobPredators){
                 blobPredator.mutatePositive(p);
