@@ -43,7 +43,7 @@ The simulation follows the life cycle of entities within the ecosystem:
 * **Movement and Behavior:** Entities exhibit realistic behaviors like seeking food, fleeing predators and wandering.
 * **Genetic Evolution:** Entities evolve through generational mutations.
 * **Seasonal Changes:** Seasonal (summer/winter) resource fluctuations affect entity survival, visualized through graphs.
-* **Interactivity:** Users can pause/reset the game, add entities and control specific blobs so they can influence the ecosystem's evolution directly.
+* **Interactivity:** Users can pause the game, add entities and control specific blobs so they can influence the ecosystem's evolution directly.
 
 ## Technical Skills Demonstrated
 
