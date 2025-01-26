@@ -138,8 +138,8 @@ public abstract class Blob extends Mover {
      * Também desenha o campo de visao do Blob para termos uma noção do quão longe ele consegue ver.
      * Por último, desenha a casa do Blob e verifica se o Blob está fora dos limites do ecrã. Caso estiver, transporta-o
      * para o lado oposto do ecrã.
-     * @param p
-     * @param plt
+     * @param p PApplet
+     * @param plt SubPlot
      */
     public void display(PApplet p, SubPlot plt) {
         p.pushStyle();

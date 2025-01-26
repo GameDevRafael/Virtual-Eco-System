@@ -239,24 +239,6 @@ public class GameManager implements IProcessingApp {
         if (p.key == ' ') {
             pauseGame = !pauseGame;
 
-        } else if (p.key == 'r') {
-            blobVillagers.clear();
-            blobPredators.clear();
-            fruits.clear();
-            leafTrees.clear();
-            lSys.reset();
-            initializeEntities(p);
-            game.resetTime(lSys);
-
-            for(BlobPredator blobPredator : blobPredators){
-                blobPredator.mutatePositive(p);
-            }
-            for(BlobVillager blobVillager : blobVillagers){
-                blobVillager.mutate(p);
-            }
-
-            GraphManager.resetGraphs();
-
         } else if (p.key == '1') {
             if(!blobVillagers.isEmpty()){
                 blobPlayer = game.getRandomBlobVillager(p);
