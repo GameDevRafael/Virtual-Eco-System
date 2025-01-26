@@ -191,8 +191,6 @@ public class GameManager implements IProcessingApp {
         BlobVillager blobVillager;
         BlobPredator blobPredator;
 
-        fruits.add(entityFactory.addFruit(worldMap, p, mousePosition));
-
         if (p.mouseButton == PApplet.LEFT) {
             if(blobVillagers.isEmpty()){
                 blobVillager = entityFactory.addBlobVillager(worldMap, p, null, mousePosition);
