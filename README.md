@@ -75,7 +75,7 @@ The simulation follows the life cycle of entities within the ecosystem:
 ![Class Diagram](src/data/classDiagram.png)  
 *Visualizing key classes and their relationships.*
 
-## Future Enhancements
+## Improvements that could be done:
 
 * **Expanded Biomes:** Introduce diverse ecosystems with unique resources and challenges.
 * **Advanced Genetic Algorithms:** Develop more complex mutation models for more realistic evolutionary dynamics.
